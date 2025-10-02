@@ -7,11 +7,11 @@ This project was done as a part of lab assignment of the ME 5554 (Robotics Sensi
 * [Features](#Features)
 * [Implementation](#Implementation)
 * [Results](#Results)
-  * [Actual path taken](#Actualpathtaken)
-  * [GPS Path Trajectory](#GPSPathTrajectory)
-  * [IMU Path Trajectory](#IMUPathTrajectory)
-  * [Comparison of GPS+IMU](#ComparisonofGPS+IMU)
-* [How to run](#Howtorun)
+  * [Actual_path_taken](#Actual_path_taken)
+  * [GPS_Path_Trajectory](#GPS_Path_Trajectory)
+  * [IMU_Path_Trajectory](#IMU_Path_Trajectory)
+  * [Comparison_of_GPS+IMU](#Comparison_of_GPS+IMU)
+* [How_to_run](#Howtorun)
 
 
 ## Objective
@@ -38,25 +38,25 @@ Magnetometer calibration used ellipse fitting to correct distortions, while yaw 
 
 ## Results
 
-### Actual path taken
+### Actual_path_taken
 
 <img width="710" height="765" alt="image" src="https://github.com/user-attachments/assets/7f9a3d8d-783b-44b6-bc18-54b109a2cfa7" />
 
-### GPS Path Trajectory
+### GPS_Path_Trajectory
 
 <img width="859" height="547" alt="image" src="https://github.com/user-attachments/assets/c4c6425d-0fe5-405b-9f59-72c6bdb408f9" />
 
-### IMU Path Trajectory
+### IMU_Path_Trajectory
 
 <img width="862" height="547" alt="image" src="https://github.com/user-attachments/assets/d7c7212f-724c-48ca-80ac-6dbcd4ab75f8" />
 
-### Comparison of GPS+IMU
+### Comparison_of_GPS+IMU
 
 <img width="1014" height="547" alt="image" src="https://github.com/user-attachments/assets/5741ff05-60cd-410d-918d-4e1fbd95a033" />
 
 The results demonstrated that GPS trajectories provided accurate long-term positioning, while IMU data excelled in capturing short-term orientation and small movements. The complementary filtered yaw closely matched the IMU’s orientation output, validating the effectiveness of sensor fusion. However, IMU-derived velocities exhibited drift and bias, which caused deviations in the reconstructed dead-reckoning trajectory compared to GPS. Despite these limitations, the IMU-based trajectory generally followed the shape of the GPS path, with errors increasing during longer drives and sharp turns. Overall, the project confirmed the strengths and weaknesses of GPS and IMU as standalone sensors, while highlighting their complementary nature. Future improvements could include implementing more advanced filtering techniques such as Kalman filters or extended sensor fusion frameworks to further improve trajectory estimation accuracy.
 
-## How To Run
+## How_To_Run
 
 ### 1. Running the GPS Driver
 ``` bash
