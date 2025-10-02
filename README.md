@@ -14,11 +14,11 @@ This project was done as a part of lab assignment of the ME 5554 (Robotics Sensi
 * [How to run](#Howtorun)
 
 
-## Objective:
+## Objective
 
 The objective of this project was to build a navigation stack using GPS and IMU data to estimate the trajectory of a moving vehicle. By combining measurements from a GPS puck and a VN-100 Inertial Measurement Unit (IMU), we aimed to achieve dead reckoning and compare its accuracy against GPS-only trajectories. The project focused on addressing the limitations of each sensor—GPS providing global accuracy but lower short-term resolution, and IMU offering high sensitivity but prone to drift—by applying filtering and calibration techniques to achieve robust trajectory estimation.
 
-## Data Collection:
+## Data Collection
 
 Data collection was performed using rosbags during two experiments: 
 - Driving in circles
@@ -26,17 +26,17 @@ Data collection was performed using rosbags during two experiments:
 
 The IMU was mounted flat on the vehicle dashboard with proper alignment, while the GPS was positioned on the car roof. After collecting the rosbags, the data was converted to CSV format for data analysis using python.
 
-## Features:
+## Features
 
 - The system integrated data from multiple sensing modalities, including GPS, accelerometer, gyroscope, and magnetometer. 
 - Magnetometer readings were calibrated for hard-iron and soft-iron distortions using ellipse fitting and transformation, while yaw orientation was estimated through both magnetometer data and gyroscope integration.
 - A complementary filter was implemented to combine these estimates, balancing the smoothness of gyroscope integration with the stability of magnetometer readings. Vehicle velocity was estimated from both GPS position changes and IMU acceleration data, with bias correction applied to reduce drift. These processed signals enabled the reconstruction of the vehicle’s trajectory using dead reckoning.
 
-## Implementation:
+## Implementation
 
 Magnetometer calibration used ellipse fitting to correct distortions, while yaw estimates were derived from both magnetometer and gyroscope data. A complementary filter fused these signals to improve heading accuracy. Velocity estimates were derived from GPS positional changes and integrated IMU accelerations, with bias correction applied using stationary detection. Finally, the trajectory was reconstructed by combining velocity and orientation estimates, and compared against the GPS-derived path.
 
-## Results:
+## Results
 
 ### Actual path taken
 
@@ -56,7 +56,7 @@ Magnetometer calibration used ellipse fitting to correct distortions, while yaw 
 
 The results demonstrated that GPS trajectories provided accurate long-term positioning, while IMU data excelled in capturing short-term orientation and small movements. The complementary filtered yaw closely matched the IMU’s orientation output, validating the effectiveness of sensor fusion. However, IMU-derived velocities exhibited drift and bias, which caused deviations in the reconstructed dead-reckoning trajectory compared to GPS. Despite these limitations, the IMU-based trajectory generally followed the shape of the GPS path, with errors increasing during longer drives and sharp turns. Overall, the project confirmed the strengths and weaknesses of GPS and IMU as standalone sensors, while highlighting their complementary nature. Future improvements could include implementing more advanced filtering techniques such as Kalman filters or extended sensor fusion frameworks to further improve trajectory estimation accuracy.
 
-## How To Run:
+## How To Run
 
 ### 1. Running the GPS Driver
 ``` bash
