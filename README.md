@@ -54,6 +54,7 @@ Magnetometer calibration used ellipse fitting to correct distortions, while yaw 
 
 <img width="1014" height="547" alt="image" src="https://github.com/user-attachments/assets/5741ff05-60cd-410d-918d-4e1fbd95a033" />
 
+
 The results demonstrated that GPS trajectories provided accurate long-term positioning, while IMU data excelled in capturing short-term orientation and small movements. The complementary filtered yaw closely matched the IMU’s orientation output, validating the effectiveness of sensor fusion. However, IMU-derived velocities exhibited drift and bias, which caused deviations in the reconstructed dead-reckoning trajectory compared to GPS. Despite these limitations, the IMU-based trajectory generally followed the shape of the GPS path, with errors increasing during longer drives and sharp turns. Overall, the project confirmed the strengths and weaknesses of GPS and IMU as standalone sensors, while highlighting their complementary nature. Future improvements could include implementing more advanced filtering techniques such as Kalman filters or extended sensor fusion frameworks to further improve trajectory estimation accuracy.
 
 ## How_To_Run
@@ -63,7 +64,7 @@ The results demonstrated that GPS trajectories provided accurate long-term posit
 ros2 launch gps_driver gps_launch.py port:=/dev/ttyUSB*
 ```
 
-### 1. Running the IMU Driver
+### 2. Running the IMU Driver
 ``` bash
 ros2 launch imu_driver imu_launch.py port:=/dev/ttyUSB*
 ```
