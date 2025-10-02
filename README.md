@@ -3,7 +3,7 @@
 This project was done as a part of lab assignment of the ME 5554 (Robotics Sensing and Navigation) course at Northeastern University.
 
 * [Objective](#Objective)
-* [Data Collection](#DataCollection)
+* [Data Collection](#Data Collection)
 * [Features](#Features)
 * [Implementation](#Implementation)
 * [Results](#Results)
@@ -32,7 +32,7 @@ The IMU was mounted flat on the vehicle dashboard with proper alignment, while t
 - Magnetometer readings were calibrated for hard-iron and soft-iron distortions using ellipse fitting and transformation, while yaw orientation was estimated through both magnetometer data and gyroscope integration.
 - A complementary filter was implemented to combine these estimates, balancing the smoothness of gyroscope integration with the stability of magnetometer readings. Vehicle velocity was estimated from both GPS position changes and IMU acceleration data, with bias correction applied to reduce drift. These processed signals enabled the reconstruction of the vehicle’s trajectory using dead reckoning.
 
-## Implementaion:
+## Implementation:
 
 Magnetometer calibration used ellipse fitting to correct distortions, while yaw estimates were derived from both magnetometer and gyroscope data. A complementary filter fused these signals to improve heading accuracy. Velocity estimates were derived from GPS positional changes and integrated IMU accelerations, with bias correction applied using stationary detection. Finally, the trajectory was reconstructed by combining velocity and orientation estimates, and compared against the GPS-derived path.
 
