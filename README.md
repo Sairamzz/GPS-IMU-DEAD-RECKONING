@@ -7,10 +7,10 @@ This project was done as a part of lab assignment of the ME 5554 (Robotics Sensi
 * [Features](#Features)
 * [Implementation](#Implementation)
 * [Results](#Results)
-    * [Actual path taken](#Actualpathtaken)
-    * [GPS Path Trajectory](#GPSPathTrajectory)
-    * [IMU Path Trajectory](#IMUPathTrajectory)
-    * [Comparison of GPS+IMU](#ComparisonofGPS+IMU)
+ * [Actual path taken](#Actualpathtaken)
+ * [GPS Path Trajectory](#GPSPathTrajectory)
+ * [IMU Path Trajectory](#IMUPathTrajectory)
+ * [Comparison of GPS+IMU](#ComparisonofGPS+IMU)
 * [How to run](#Howtorun)
 
 
