@@ -3,7 +3,7 @@
 This project was done as a part of lab assignment of the ME 5554 (Robotics Sensing and Navigation) course at Northeastern University.
 
 * [Objective](#Objective)
-* [Data Collection](#Data_Collection)
+* [Data_Collection](#Data_Collection)
 * [Features](#Features)
 * [Implementation](#Implementation)
 * [Results](#Results)
@@ -18,7 +18,7 @@ This project was done as a part of lab assignment of the ME 5554 (Robotics Sensi
 
 The objective of this project was to build a navigation stack using GPS and IMU data to estimate the trajectory of a moving vehicle. By combining measurements from a GPS puck and a VN-100 Inertial Measurement Unit (IMU), we aimed to achieve dead reckoning and compare its accuracy against GPS-only trajectories. The project focused on addressing the limitations of each sensor—GPS providing global accuracy but lower short-term resolution, and IMU offering high sensitivity but prone to drift—by applying filtering and calibration techniques to achieve robust trajectory estimation.
 
-## Data Collection
+## Data_Collection
 
 Data collection was performed using rosbags during two experiments: 
 - Driving in circles
