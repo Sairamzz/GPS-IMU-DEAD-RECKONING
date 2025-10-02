@@ -3,7 +3,7 @@
 This project was done as a part of lab assignment of the ME 5554 (Robotics Sensing and Navigation) course at Northeastern University.
 
 * [Objective](#Objective)
-* [Data_Collection](#Data_Collection)
+* [Data Collection](#Data_Collection)
 * [Features](#Features)
 * [Implementation](#Implementation)
 * [Results](#Results)
